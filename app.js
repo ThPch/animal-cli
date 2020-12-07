@@ -5,7 +5,10 @@ const {
     peoplesAndAnimalsCounter
 } = require("./services/index.js");
 
-
+/**
+* init() function used to start the script
+* @param 
+*/
 const init = () => {
     
     let animalsList = Object.values(data)
@@ -23,8 +26,9 @@ const init = () => {
         case '--count':
             console.log(util.inspect(peoplesAndAnimalsCounter(animalsList), {depth:null}));
             break;
+            
         default:
-          console.log(`Sorry, we are out of .`);
+          console.log(`The ${arg[0]} parameter isn't recognized, use --filter=<tag> or --count`);
       }
 }
 

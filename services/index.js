@@ -1,3 +1,7 @@
+/**
+* filterAnimalByTag()
+* @param arr = an array of country, peoples and animals, tag = keywords using to search in the animal's name
+*/
 const filterAnimalByTag = (arr, tag='ry') => {
     return arr.map(country => ({
         ...country,
@@ -8,6 +12,11 @@ const filterAnimalByTag = (arr, tag='ry') => {
     })).filter(country => country.people.length > 0)
 }
 
+
+/**
+* peoplesAndAnimalsCounter() initialisation of Octokit
+* @param arr = an array of country, peoples and animals
+*/
 const peoplesAndAnimalsCounter = (arr) => {
     return arr.map(country => ({
         name: country.name.concat(` [${country.people.length}]`),

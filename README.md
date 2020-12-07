@@ -1,4 +1,32 @@
-# Javascript developer test
+# Animal-CLI
+
+This command line interface is built to organize and filter data related to animals.
+
+## Installing
+
+```
+git clone https://github.com/ThPch/animal-cli.git
+npm install
+
+node app.js --filter=ry
+node app.js --count
+```
+
+## Unit Testing
+
+Using mocha & chai for testing
+visit http://mochajs.org and http://chaijs.com for details
+
+```
+  filterAnimalByTag(data, tag) Services Function where tag="ry"
+    √ Only animals containing `ry` are displayed. The order should be kept intact. Empty array after filtering are NOT returned.
+
+  peoplesAndAnimalsCounter(data) Services Function
+    √ Prints the counts of People and Animals by counting the number of children and appending it in the name
+
+
+  2 passing (19ms)
+```
 
 ## Filter
 

@@ -68,8 +68,6 @@ const correctAnswerSecondTest = [{
       ]
 }]
 
-//   console.log(util.inspect(filterAnimalByTag(data), {depth:null}))
-
 describe('filterAnimalByTag(data, tag) Services Function where tag="ry" ', () => {
     it('Only animals containing `ry` are displayed. The order should be kept intact. Empty array after filtering are NOT returned.', (done) => {
       
