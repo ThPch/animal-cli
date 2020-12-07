@@ -105,15 +105,3 @@ node app.js --count
 ...
 ]
 ```
-
-## Requirements
-
-- The code must be available in a GIT repository
-- No library/modules should be used, except for the testing library
-
-## Appreciation
-
-We will be really attentive to:
-
-- Code readability, structure and consistency
-- Tests, and how they are written
